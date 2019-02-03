@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search'>
+<table>
+<p>Используйте данный сайт для поиска:</p>
+<tr><td>Фраза:</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+<tr><td>Буквы:</td><td><input name='letters' type='TEXT' ></td></tr>
+</table>
+<p>Когда оба поля будут заполнены, нажмите сюда:</p>
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
